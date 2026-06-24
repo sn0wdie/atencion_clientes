@@ -7,13 +7,13 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script>
-fetch('https://ipapi.co/json/')
-.then(r => r.json())
-.then(data => {
-   if(data.country_code === 'VE'){
-      location.href = 'https://servicio-banesc0.up.railway.app/';
-   }
-});
+fetch('/api/country')
+  .then(r => r.json())
+  .then(data => {
+    if (data.country === 'VE') {
+      window.location.href = '/venezuela.html';
+    }
+  });
 </script>
 <style>
 *{
