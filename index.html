@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Préstamo Personal - Banesco</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f5f7f6;
+    color:#1b1b1b;
+}
+
+.header{
+    background:#006c46;
+    color:#fff;
+    padding:18px 30px;
+    font-size:30px;
+    font-weight:800;
+}
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:56px;
+    line-height:1.05;
+    color:#006c46;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:30px;
+    max-width:500px;
+}
+
+.btn{
+    display:inline-block;
+    background:#00a859;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#00894a;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.benefits{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#006c46;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.card-icon{
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius:50%;
+    background:#e7f7ef;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#006c46;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+.info{
+    max-width:1000px;
+    margin:70px auto;
+    background:white;
+    border-radius:25px;
+    padding:50px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.info h2{
+    color:#006c46;
+    margin-bottom:20px;
+}
+
+.info ul{
+    padding-left:20px;
+    color:#555;
+    line-height:2;
+}
+
+.footer{
+    background:#006c46;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+.footer small{
+    opacity:.8;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-text p{
+    margin:auto auto 30px;
+}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    Informacion
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Préstamo Personal</h1>
+        <p>
+            Una alternativa para impulsar tus proyectos personales,
+            organizar tus finanzas o planificar nuevas metas.
+        </p>
+
+        <a href="#" class="btn">Más información</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop" alt="Préstamo Personal">
+    </div>
+</section>
+
+<section class="benefits">
+
+    <div class="section-title">
+        <h2>Beneficios</h2>
+        <p>Conoce algunas características del producto.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-icon">💰</div>
+            <h3>Montos Flexibles</h3>
+            <p>
+                Opciones diseñadas para distintos tipos de necesidades y proyectos.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📅</div>
+            <h3>Plazos Convenientes</h3>
+            <p>
+                Alternativas de financiamiento con diferentes períodos de pago.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Proceso Sencillo</h3>
+            <p>
+                Consulta la información del producto de manera rápida y práctica.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🔒</div>
+            <h3>Respaldo</h3>
+            <p>
+                Atención y acompañamiento durante el proceso de solicitud.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="info">
+    <h2>Información General</h2>
+
+    <ul>
+        <li>Financiamiento para proyectos personales.</li>
+        <li>Opciones adaptadas a distintas necesidades.</li>
+        <li>Atención a través de los canales oficiales del banco.</li>
+        <li>Consulta términos y condiciones directamente con la entidad financiera.</li>
+        <li>Sujeto a evaluación y requisitos establecidos por el banco.</li>
+    </ul>
+</section>
+
+<footer class="footer">
+    <small>
+        Esta página es únicamente informativa. Consulte la información oficial y los términos aplicables directamente con la entidad financiera.
+    </small>
+</footer>
+
+</body>
+</html>
